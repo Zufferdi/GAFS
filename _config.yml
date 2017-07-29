@@ -1,0 +1,26 @@
+# Site settings
+title: Gafschola
+email: gafschola@gmail.com
+url: 
+description: "Des arts martiaux historiques européens à Fribourg"
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary-dark: '#000000'
+  links: '#219ab3'
+
+# Footer settings
+footer: Gladiatorium Artium Friburgensis Schola
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: https://twitter.com/Zard8
+  - title: facebook
+    url: https://www.facebook.com/gafschola
+  - title: github
+    url: https://github.com/zufferdi
+
+# Build settings
+markdown: kramdown
+permalink: pretty
