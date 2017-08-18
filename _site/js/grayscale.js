@@ -1,7 +1,6 @@
 /*!
  * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
 // jQuery to collapse the navbar on scroll
@@ -35,156 +34,61 @@ $("a").mouseup(function(){
     $(this).blur();
 })
 
-// Google Maps Scripts
-// When the window has finished loading create our google map below
-google.maps.event.addDomListener(window, 'load', init);
 
-function init() {
-    // Basic options for a simple Google Map
-    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-    var mapOptions = {
-        // How zoomed in you want the map to start at (always required)
-        zoom: 15,
+/*
+ * L.TileLayer.Grayscale is a regular tilelayer with grayscale makeover.
+ */
 
-        // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.6700, -73.9400), // New York
+L.TileLayer.Grayscale = L.TileLayer.extend({
+	options: {
+		quotaRed: 21,
+		quotaGreen: 71,
+		quotaBlue: 8,
+		quotaDividerTune: 0,
+		quotaDivider: function() {
+			return this.quotaRed + this.quotaGreen + this.quotaBlue + this.quotaDividerTune;
+		}
+	},
 
-        // Disables the default Google Maps UI components
-        disableDefaultUI: true,
-        scrollwheel: false,
-        draggable: false,
+	initialize: function (url, options) {
+		options.crossOrigin = true;
+		L.TileLayer.prototype.initialize.call(this, url, options);
 
-        // How you would like to style the map. 
-        // This is where you would paste any style found on Snazzy Maps.
-        styles: [{
-            "featureType": "water",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }]
-        }, {
-            "featureType": "landscape",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 20
-            }]
-        }, {
-            "featureType": "road.highway",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }]
-        }, {
-            "featureType": "road.highway",
-            "elementType": "geometry.stroke",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 29
-            }, {
-                "weight": 0.2
-            }]
-        }, {
-            "featureType": "road.arterial",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 18
-            }]
-        }, {
-            "featureType": "road.local",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 16
-            }]
-        }, {
-            "featureType": "poi",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 21
-            }]
-        }, {
-            "elementType": "labels.text.stroke",
-            "stylers": [{
-                "visibility": "on"
-            }, {
-                "color": "#000000"
-            }, {
-                "lightness": 16
-            }]
-        }, {
-            "elementType": "labels.text.fill",
-            "stylers": [{
-                "saturation": 36
-            }, {
-                "color": "#000000"
-            }, {
-                "lightness": 40
-            }]
-        }, {
-            "elementType": "labels.icon",
-            "stylers": [{
-                "visibility": "off"
-            }]
-        }, {
-            "featureType": "transit",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 19
-            }]
-        }, {
-            "featureType": "administrative",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 20
-            }]
-        }, {
-            "featureType": "administrative",
-            "elementType": "geometry.stroke",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }, {
-                "weight": 1.2
-            }]
-        }]
-    };
+		this.on('tileload', function(e) {
+			this._makeGrayscale(e.tile);
+		});
+	},
 
-    // Get the HTML DOM element that will contain your map 
-    // We are using a div with id="map" seen below in the <body>
-    var mapElement = document.getElementById('map');
+	_createTile: function () {
+		var tile = L.TileLayer.prototype._createTile.call(this);
+		tile.crossOrigin = "Anonymous";
+		return tile;
+	},
 
-    // Create the Google Map using out element and options defined above
-    var map = new google.maps.Map(mapElement, mapOptions);
+	_makeGrayscale: function (img) {
+		if (img.getAttribute('data-grayscaled'))
+			return;
 
-    // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
-    var beachMarker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-        icon: image
-    });
-}
+                img.crossOrigin = '';
+		var canvas = document.createElement("canvas");
+		canvas.width = img.width;
+		canvas.height = img.height;
+		var ctx = canvas.getContext("2d");
+		ctx.drawImage(img, 0, 0);
 
+		var imgd = ctx.getImageData(0, 0, canvas.width, canvas.height);
+		var pix = imgd.data;
+		for (var i = 0, n = pix.length; i < n; i += 4) {
+                        pix[i] = pix[i + 1] = pix[i + 2] = (this.options.quotaRed * pix[i] + this.options.quotaGreen * pix[i + 1] + this.options.quotaBlue * pix[i + 2]) / this.options.quotaDivider();
+		}
+		ctx.putImageData(imgd, 0, 0);
+		img.setAttribute('data-grayscaled', true);
+		img.src = canvas.toDataURL();
+	}
+});
 
-
-
+L.tileLayer.grayscale = function (url, options) {
+	return new L.TileLayer.Grayscale(url, options);
+};
 
 

@@ -28,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
+    margin: 0 0 15px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
@@ -36,16 +36,17 @@ h6 {
 }
 
 p {
-    margin: 0 0 25px;
+    margin: 0 0 ;
     font-size: 18px;
     line-height: 1.5;
 }
 
 @media(min-width:767px) {
     p {
-        margin: 0 0 35px;
+        margin: 0 0 15px;
         font-size: 20px;
         line-height: 1.6;
+        padding-bottom: 15px;
     }
 }
 
@@ -66,6 +67,8 @@ a:focus {
     font-weight: 400;
 }
 
+/* Navigation Barre */
+
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
@@ -85,7 +88,7 @@ a:focus {
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: #fff;
+    color: dimgray;
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -94,7 +97,7 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: dimgray;
 }
 
 .navbar-custom .nav li.active {
@@ -136,6 +139,8 @@ a:focus {
     }
 }
 
+/* pages of the site */
+
 .intro {
     display: table;
     width: 100%;
@@ -143,13 +148,125 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(/img/intro-bg.jpg) no-repeat bottom center scroll;
+    /* Welcome pic to be changed */
+    background: url(/img/SG15-5.JPG) no-repeat bottom center scroll;
     background-color: #000000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
+
+#about {
+    width: 100%;
+    padding: 150px 50px 150px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+#recherche {
+    width: 100%;
+    padding: 50px 50px 150px;
+    color: #fff;
+    background: url(/img/Ancien.jpg) no-repeat center center scroll;
+    background-color: #000000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+#generateur {
+    width: 100%;
+    padding: 150px 50px 150px;
+    color: #fff;
+    background: url(/img/SG15-4.JPG) no-repeat ;
+    background-color: #000000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+#recrutement {
+    width: 100%;
+    padding: 150px 50px 200px;
+    color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+
+#event {
+    width: 100%;
+    padding: 150px 50px 200px;
+    color: #fff;
+    background: url(/img/Fighter.JPG) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+#media{
+    width: 100%;
+    padding: 150px 50px 200px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#infos {
+    width: 100%;
+    padding: 150px 50px 150px;
+    color: #fff;
+    background: url(/img/Lego_fence.JPG) no-repeat center center scroll;
+    background-color: #000000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+#mapid {
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+}
+
+/* Animation of the pages, transitions */
 
 .intro .intro-body {
     display: table-cell;
@@ -161,7 +278,9 @@ a:focus {
 }
 
 .intro .intro-body .intro-text {
-    font-size: 18px;
+    font-size: 25px;
+    color: dimgray;
+    font-weight: 200;
 }
 
 @media(min-width:767px) {
@@ -184,10 +303,10 @@ a:focus {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid #fff;
+    border: 2px solid dimgray;
     border-radius: 35px;
     font-size: 40px;
-    color: #fff;
+    color: black;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -257,63 +376,13 @@ a:focus {
     padding-top: 100px;
 }
 
-.recherche {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(/img/Ancien.jpg) no-repeat center center scroll;
-    background-color: #000000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: left;
-}
-
-.recrutement {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(/img/trio1.jpg) no-repeat center center scroll;
-    background-color: #000000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: left;
-}
-
-.contact {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(/img/Proguard.JPG) no-repeat center center scroll;
-    background-color: #000000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: left;
-}
-
-#map {
-    width: 100%;
-    height: 300px;
-    margin-top: 100px;
-}
 
 @media(min-width:767px) {
     .content-section {
         padding-top: 200px;
     }
 
-    .recherchen {
+    .recherche {
         padding: 100px 0;
     }
 
@@ -404,13 +473,21 @@ body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
-.buts{
-    margin: 0 0 25px;
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: left;
-}
-
 .page-scroll {
     color: #262829;
 }
+
+/* on page usefull class */
+
+#buts{
+    font-size: 18px;
+    text-align: left;
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 1.5;
+}
+
+.une{
+    float: left;
+}
+
+

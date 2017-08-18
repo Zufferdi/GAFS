@@ -3,10 +3,11 @@
     <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Gafschola</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Des arts martiaux historiques européens à Fribourg">
     <link rel="canonical" href="http://localhost:4000/">
+    
+    <title>GAFSchola | Association dédiée à l'étude des Arts Martiaux Historiques Européens</title>
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link rel="stylesheet" href="/style.css">
@@ -29,11 +30,21 @@
    integrity="sha512-wcw6ts8Anuw10Mzh9Ytw4pylW8+NAD4ch3lqm9lzAsTxg0GFeJgoAtxuCLREZSC5lUXdVyo/7yfsqFjQ4S+aKw=="
    crossorigin=""/>
     
+    
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css' />
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.js'></script>
+    
+
+    
 </head>
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
      <!-- Navigation -->
+
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        
         <div class="container">
+            
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
@@ -41,6 +52,7 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
+            
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
@@ -48,162 +60,264 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">A propos</a>
+                        <a class="page-scroll" href="#about"><strong>A propos</strong></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#recherche">Recherches et projets</a>
+                        <a class="page-scroll" href="#recrutement"><strong>Recrutement</strong></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#recrutement">Recrutement</a>
+                        <a class="page-scroll" href="#recherche"><strong>Recherches et projets</strong></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#media">Média</a>
+                        <a class="page-scroll" href="#event"><strong>Animations</strong></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#media"><strong>Média</strong></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#infos"><strong>Infos pratiques</strong></a>
                     </li>
                 </ul>
             </div>
+            
             <!-- /.navbar-collapse -->
+            
         </div>
         <!-- /.container -->
+        
     </nav>
         <!-- Intro Header -->
+
     <header class="intro">
+        
         <div class="intro-body">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Gafschola</h1>
-                        <p class="intro-text">Des arts martiaux historiques européens à Fribourg<br>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+                        <h1 class="brand-heading"> <div class="une"> <img src="../img/GAFS_logo_black-01.png"></div></h1>
+                        <p class="intro-text"><strong>Des arts martiaux historiques européens à Fribourg</strong><br>
+                        <a href="#about" class="btn btn-circle page-scroll"> <i class="fa fa-angle-double-down animated"></i> </a>
                     </div>
                 </div>
             </div>
         </div>
+        
     </header>
 
         <!-- About Section -->
-    <section id="about" class="container content-section text-center">
+
+    <section id="about" class="container content-section text-left">
+        
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>A propos</h2>
-                <p>Fondée en 2014, la GAFSCHOLA (Gladiatorium Artium Friburgensis Schola) est basée à Fribourg. Nous cherchons à transmettre les gestes relatifs aux Arts Martiaux Historiques Européens et nous sommes également impliqués dans la recherche et le développement des AMHE. </p>
-                <p>L'association est membre de la <a href="http://swiss-hema.ch/fr/">Fédération Suisse des Arts Martiaux Historiques Européens </a></p>
-                <p>
-                    L’Association poursuit les buts suivants:
-                    <ul> 
-                        <li class="buts">Transmettre les gestes martiaux relatifs aux Arts Martiaux Historiques Européens.
+                    <p>Fondée en 2014, la GAFSCHOLA (Gladiatorium Artium Friburgensis Schola) est basée à Fribourg. Notre association promeut la pratique des Arts Martiaux Historiques Européens (AMHE).<br> 
+                    L’Association poursuit les buts suivants&nbsp;:<br>
+                    <ul class="buts"> 
+                        <li>Transmettre les gestes martiaux relatifs aux AMHE.
                         </li>
-                        <li class="buts">Collaborer aux études sur des sources textuelles (transcriptions et traductions).
+                        <li>Collaborer aux études sur des sources textuelles (transcriptions et traductions).
                         </li>
-                        <li class="buts">Prendre part aux recherches relatives à la pratique des Arts Martiaux Historiques Européens (AMHE).
+                        <li>Prendre part aux recherches relatives à la pratique des AMHE.
                         </li>
-                        <li class="buts">
-                        Considérer les méthodes de transmission de savoir pour pratiquer les Arts Martiaux Historiques Européens.
+                        <li>Considérer les méthodes de transmission de savoir pour la pratique des AMHE.
                         </li>
-                        <li class="buts">S’investir dans une dynamique de partage de savoir au sein de la communauté HEMAC.
+                        <li>S’investir dans une dynamique de partage de savoir au sein de la communauté.
                         </li>
                     </ul> 
+                   <p> L'Association est membre de la Fédération Suisse des Arts Martiaux Historiques Européens <a href="http://swiss-hema.ch/fr/"> (FSAMHE)</a>.<br> Les statuts complets de l'Association sont disponibles<a href="/assets/download/StatutsGAFS_v.2016.pdf"> ici</a>.   
                 </p>
-                <p> </p>
             </div>
         </div> 
-</section>
-        <!-- Download Section -->
-    <section id="download" class="content-section text-center">
+        
+    </section>
+        <!-- Recruit Section -->
+
+    <section id="recrutement" class="container content-section text-left">
+        
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h3>Les arts martiaux te passionnent&nbsp;? </h3>
+                
+                    <p> Tu as toujours voulu faire un sport de combat, mais rien ne te convenait&nbsp;? Envie de découvrir des gestes guerriers allant du 15ème jusqu'aux débuts du 20ème siècle&nbsp;? </p>
+                
+                    <p> Pratiquer l’escrime à l’épée longue, de la canne, ou de la lutte dans un cadre dynamique et sérieux&nbsp;? </p>
+                
+                    <p>Tu veux sortir de ta zone de confort tout en restant dans un cadre sécurisé&nbsp;? Faire de l’archéologie expérimentale à la pointe d'une lame&nbsp;? </p>
+                    
+                    <p> Bref, on aurait pu résumer tout cela en une question&nbsp;: souhaites-tu pratiquer les Arts Martiaux Historiques Européens&nbsp;?
+                    Sache que GAFSchola est là pour répondre à tes vœux&nbsp;!<br>
+                    Contacte simplement <a href="mailto:gafschola@gmail.com"> un membre du comité </a> et viens assister à nos entraînements.</p>
+                </div>  
+            </div>
+        
+    </section>
+        <!-- Research and work Section -->
+
+    <section id="recherche" class="content-section text-left">
         <div class="recherche">
             <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Recherches et travaux</h2>
+                <div class="col-lg-8 col-lg-offset-2" class="content-section text-center">
+                
+                <h2>Recherches et projets</h2>
+                
+                </div>
+
+                <div class="col-sm-4">
+                
+                       <h3> En cours de travail</h3>
                     
-                    <p>En cours de travail</p>
-                    <a href="https://zufferdi.github.io/amhe_entrainement/" class="btn btn-default btn-lg">Un générateur d'entraînement</a>
+                        <ul>Elaboration d'un <button type="button" class="btn btn-aramark-primary" onclick="window.open('/generateur.html', '_blank')">Générateur </button> d'entraînement ou d'échauffement aléatoire sur une base d'exercices élaborés en cours ou inspirés des traveux de la communauté. </ul>
                     
-                    <h2>Ateliers</h2>
+                        <ul>Transcription de la <a href="http://data.rero.ch/01-R007038680/html?view=FR_V1">Théorie pour l’exercice du Sabre et de la Bayonnette</a> de Joseph Bonivini, publié à Fribourg vers 1850.</ul>             
+               </div>
+                
+                <div class="col-sm-4">
                     
+                        <h3>Ateliers</h3>
+                    
+                        <li> La Canne selon Leboucher, de Flavie Spicher et Etienne von Gunten, Swiss-Gathering, 2015.</li>
+                        <li> <a href="https://docs.google.com/document/d/1AHlXlFyvmtFHj-KCAlw45FsoAT33zjP1tXQuoqFovVg/edit?usp=sharing">"Survivre dans les tranchées"</a> : pelle, baïonnette, de Valentin Clément, Flavie Spicher et Dimitri Zufferey, Swiss-Gathering, 2016.</li>
+                        <li> La hache d'armes selon l'Anonyme Bolognais, Yan Charrière, Augustine Clément, Swiss-Gathering, 2017.</li>                
+              </div>
+                
+                <div class="col-sm-4">
+                    
+                    <h3>Documents et transcriptions</h3>
+
+                        <li> <a href="/assets/sources/GAFS_Galley_Traite_1877.pdf">Transcription du Traité d'escrime pratique au sabre, à la baïonnette et au bâton, de Léon Galley, édité à Fribourg en 1877.</a></li>
+                    
+                    <h3>Sources numérisées</h3>
+  
+                        <li> <a href="/assets/sources/1845_DMF_Instrcution sur l"> Département Militaire Fédéral, Instruction sur l'escrime à la baïonnette, Berne, 1845.</a></li>
+                        <li> <a href="/assets/sources/1852_Rougemont_Traité sur l"> Rougemont, Traité sur l'escrime à la bayonnette Bonivini, Neuchâtel, 1852.</a></li>
+                        <li> <a href="/assets/sources/1865_Instruction sur l"> Département Militaire Fédéral, Instruction sur l'escrime au sabre (Contre-pointe), Berne, 1865.</a></li>
+                        <li> <a href="/assets/sources/1890_Atlhoffer_Des plaies par instruments piquants et en  particulier par la baïonnette, Lyon, Storck.pdf"> Althoffer, Des plaies par instruments piquants et en  particulier par la baïonnette, Lyon, 1890.</a></li>
                     
                 </div>
             </div>
         </div>
     </section>
-        <section id="download" class="content-section text-center">
-        <div class="recrutement">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h5>Les arts martiaux te passionnent ? </h5>
-                    <p>Tu as toujours voulu faire un sport de combat, mais rien ne te convenait ? <br>
-                    Désires-tu découvrir les gestes guerriers du XVème et au début du XXème siècle?
-                    Pratiquer l’escrime à l’épée longue, la lutte dans un cadre dynamique et sérieux?
-                    Tu veux sortir de ta zone de confort tout en restant dans un cadre sécurisé?
-                    Faire de l’archéologie expérimentale à la pointe d'une lame?
+        <!-- Event Section -->
+
+    <section class="event" class="container content-section text-left">
+        
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+            <h2> Cours d'initiation</h2>  
+            
+                <p> <strong> A la recherche d'une piste originale pour votre prochaine activité&nbsp;? </strong> <br>
                     
-                    Bref, souhaites-tu pratiquer les Arts Martiaux Historiques Européens?
-                    Sache que GAFSchola est là pour répondre à tes vœux!
-                    Contacte simplement <a href="mailto:gafschola@gmail.com"> un membre du comité </a> et viens assister à nos entrainements.</p>
+                    Nous serions ravis de vous proposer un cours d'initation privéà l'escrime historique. Que ce soit à l'occasion d'un séminaire d'entreprise, d'un entrerrement de vie de jeune garçon ou à l'occasion d'une fête, nous pouvons mettre sur pied un atelier de découverte des AMHE en vous offrant la possibilité de manier une épée ou un sabre dans un contexte sûr et en ayant les informations historiques nécessaires.<br>
                     
-                   
-                </div>  
+                    Cette session de découverte est partagée en plusieurs parties&nbsp;:</p>
+                    
+                    <ul class="buts">
+                    <li>Introduction aux AMHE</li>
+                    <li>Échauffement</li>
+                    <li>Théorie et pratique sur les déplacements, les gardes, les attaques et quelques techniques avancées</li>
+                    <li>Mise en pratiques des fondamentaux avec des combats libres</li>
+                    <li>Discussions et étirements</li>
+                    </ul>
+                    
+                    <p> Pour mettre tout cela sur pied ensemble et dans l'idée de construire le projet qu'il vous faut, contactez-nous par <a href="mailto:gafschola@gmail.com"> e-mail</a>.
+                </p>
+                
             </div>
         </div>
+        
     </section>
-        <!-- media Section -->
+        <!-- Media Section -->
 
     <section id="media" class="container content-section text-center">
         <div class="row">
+            
             <div class="col-lg-8 col-lg-offset-2">
                 
-            <p> L'association ou certains de ses membres ont fait l'objet d'un article</p>    
-            <p> <i>Couleurs Locales (RTS)</i>, mercredi 24 septembre 2014.
-                <span><iframe src="http://www.rts.ch/embed/PtNx" width="560" height="315" frameborder="0"></iframe></span></p>
+            <h2>La GAFS dans les médias</h2>  
+            
+                <p class="media"> Couleurs Locales (RTS), 24 septembre 2014.
+                <span><iframe src='//tp.srgssr.ch/p/rts/embed?urn=urn:rts:video:6171105&start=' allowfullscreen='allowfullscreen' referrerpolicy='no-referrer-when-downgrade' width='624' height='351' frameborder='0' name="FR: la ville offre un cadre idyllique à la pratique de l'escrime médiévale"></iframe></span></p>
                 
-            <p><i>La Liberté, </i>pages jeunes<i>, </i>vendredi 11 décembre 2015.<br/>
-                <a href="http://www.ww.laliberte.ch/news/page-jeunes/qui-n-a-jamais-reve-de-se-battre-avec-une-epee-316057#.VxOibnqI6Xg" target="_blank"><i>Qui n&rsquo;a jamais rêvé de se battre avec une épée? </i></a></p>
+                <p class="media"><a href="/assets/download/GAFS_Liberte.pdf">La Liberté</a>, pages jeunes, 11 décembre 2015.<br> <em> Qui n&rsquo;a jamais rêvé de se battre avec une épée? </em></p>
                 
+                <p class="media"><a href="/assets/download/GAFS_Medieval.pdf">La Liberté</a>, pages jeunes, 20 juin 2017.<br> <em> Oyez, oyez, jeunes gens </em></p>
+                
+            <h2>Galerie photo</h2> 
                 
             </div>
+            
         </div>
     </section>
-        <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
+        <!-- Infos Section -->
+
+    <section id="infos" class="container content-section text-left">
+        
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                     <h2>Contact</h2>
-                <p>Le meilleur moyen de nous contacter reste l'e-mail.</p>
-                <p><a href="mailto:gafschola@gmail.com">gafschola@gmail.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    
-                    <li>
-                        <a href="https://twitter.com/Zard8" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">twitter</span></a>
-                    </li>
+        
+                        <p class="text-center" ><a href="mailto:gafschola@gmail.com">gafschola@gmail.com</a></p>
+                
+                        <p class="text-center" > Etienne von Gunten (président) 077 434 39 73 <span class="portrait"> </span></p>
+                
+                        <p class="text-center" > GAFS c/o Dimitri Zufferey, Route des Arsenaux 35, 1700 Fribourg.</p>
+                
+                
+                <ul class="list-inline banner-social-buttons text-center">
                     
                     <li>
                         <a href="https://www.facebook.com/gafschola" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">facebook</span></a>
                     </li>
                     
-                    <li>
-                        <a href="https://github.com/zufferdi" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">github</span></a>
-                    </li>
-                    
                 </ul>
+
             </div>
+            
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Entraînements</h2>
-                <p> Nos entraînements ont lieu le mercredi de 19 à 21h en ville de Fribourg. Ils se déroulent à la salle de gymnastique du CO de Pérolles. Depuis la gare de Fribourg, prendre le bus 1 ou 3 direction Pérolles ou Marly, arrêt Pérolles.</p>
-            </div>    
+                
+                <p> Nos entraînements ont lieu le mercredi de 19h15 à 21h15 en ville de Fribourg. Ils se déroulent à la salle de gymnastique du CO de Pérolles.</p> 
+                        
+                <h3> Accès </h3>  
+                
+                <p>En transports publics : depuis la gare de Fribourg, prendre le bus 1 ou 3 direction Pérolles ou Marly, arrêt Pérolles. <br>
+                En voiture : possibilité de stationner le temps de l'entraînement dans le parking du Cycle d'Orientation.</p>
+                
+            </div> 
         </div>
+        
     </section>
+        <!-- Map Section -->
+
+    <div id="mapid">
+        
+        <script>
+            var mymap = L.map('mapid').setView([46.794696, 7.158363], 15);
+            var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+            var osmAttrib='Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
+            var osm = new L.TileLayer(osmUrl, {minZoom: 5, maxZoom: 18, attribution: osmAttrib});
+            mymap.addLayer(osm);
+            
+             L.marker([46.794696, 7.158363]).addTo(mymap).bindPopup("<a href='www.gafschola.ch'> <strong>Entraînement</strong> </a>"); 
+
+        </script>
+        
+    </div>
+
+
+
         <!-- Footer -->
+
     <footer>
+        
         <div class="container text-center">
-            <p>Copyright &copy; Gladiatorium Artium Friburgensis Schola 2017</p>
+            <p>&copy; Gladiatorium Artium Friburgensis Schola 2017.</p>
         </div>
+        
     </footer>
 
-     <!-- jQuery Version 1.11.0 -->
+        <!-- jQuery Version 1.11.0 -->
     <script src="/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
@@ -215,6 +329,10 @@
     <!-- Custom Theme JavaScript -->
     <script src="/js/grayscale.js"></script>
 
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"
+           integrity="sha512-mNqn2Wg7tSToJhvHcqfzLMU6J4mkOImSPTxVZAdo+lcPlk+GhZmYgACEe0x35K7YzW1zJ7XyJV/TT1MrdXvMcA=="
+           crossorigin=""></script>  
 
     </body>
 </html>

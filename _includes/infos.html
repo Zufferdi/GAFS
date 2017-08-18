@@ -1,0 +1,39 @@
+    <!-- Infos Section -->
+
+    <section id="infos" class="container content-section text-left">
+        
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Contact</h2>
+        
+                        <p class="text-center" ><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+                
+                        <p class="text-center" > Etienne von Gunten (président) 077 434 39 73 <span class="portrait"> </span></p>
+                
+                        <p class="text-center" > GAFS c/o Dimitri Zufferey, Route des Arsenaux 35, 1700 Fribourg.</p>
+                
+                
+                <ul class="list-inline banner-social-buttons text-center">
+                    {% for network in site.social %}
+                    <li>
+                        <a href="{{ network.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ network.title }} fa-fw"></i> <span class="network-name">{{ network.title }}</span></a>
+                    </li>
+                    {% endfor %}
+                </ul>
+
+            </div>
+            
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Entraînements</h2>
+                
+                <p> Nos entraînements ont lieu le mercredi de 19h15 à 21h15 en ville de Fribourg. Ils se déroulent à la salle de gymnastique du CO de Pérolles.</p> 
+                        
+                <h3> Accès </h3>  
+                
+                <p>En transports publics : depuis la gare de Fribourg, prendre le bus 1 ou 3 direction Pérolles ou Marly, arrêt Pérolles. <br>
+                En voiture : possibilité de stationner le temps de l'entraînement dans le parking du Cycle d'Orientation.</p>
+                
+            </div> 
+        </div>
+        
+    </section>
