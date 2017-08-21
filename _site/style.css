@@ -170,7 +170,7 @@ a:focus {
     width: 100%;
     padding: 50px 50px 150px;
     color: #fff;
-    background: url("/img/Ancien.Jpg") no-repeat center center scroll;
+    background: url("/img/Ancien.jpg") no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -202,7 +202,7 @@ a:focus {
     width: 100%;
     padding: 150px 50px 200px;
     color: #fff;
-    background: url("/img/trio.JPG") no-repeat ;
+    background: url("/img/trio.jpg") no-repeat ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;

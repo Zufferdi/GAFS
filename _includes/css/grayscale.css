@@ -165,7 +165,7 @@ a:focus {
     width: 100%;
     padding: 50px 50px 150px;
     color: #fff;
-    background: url("{{ '/img/Ancien.Jpg' | prepend: site.baseurl }}") no-repeat center center scroll;
+    background: url("{{ '/img/Ancien.jpg' | prepend: site.baseurl }}") no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -197,7 +197,7 @@ a:focus {
     width: 100%;
     padding: 150px 50px 200px;
     color: #fff;
-    background: url("{{ '/img/trio.JPG' | prepend: site.baseurl }}") no-repeat ;
+    background: url("{{ '/img/trio.jpg' | prepend: site.baseurl }}") no-repeat ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
