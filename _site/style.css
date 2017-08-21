@@ -150,7 +150,6 @@ a:focus {
     color: #fff;
     /* Welcome pic to be changed */
     background: url("/img/SG15-5.JPG") no-repeat bottom center scroll;
-    background-color: #000000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -172,7 +171,6 @@ a:focus {
     padding: 50px 50px 150px;
     color: #fff;
     background: url("/img/Ancien.Jpg") no-repeat center center scroll;
-    background-color: #000000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -189,7 +187,6 @@ a:focus {
     padding: 150px 50px 150px;
     color: #fff;
     background: url("/img/SG15-4.JPG") no-repeat ;
-    background-color: #000000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -206,7 +203,6 @@ a:focus {
     padding: 150px 50px 200px;
     color: #fff;
     background: url("/img/trio.JPG") no-repeat ;
-    background-color: #000000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
