@@ -152,7 +152,9 @@ a:focus {
 }
 
 #about {
+    display: table;
     width: 100%;
+    height: auto;
     padding: 150px 50px 150px;
     color: #fff;
     font-size: 18px;
@@ -162,7 +164,9 @@ a:focus {
 
 }
 #recherche {
+    display: table;
     width: 100%;
+    height: auto;
     padding: 50px 50px 150px;
     color: #fff;
     background: url("{{ '/img/Ancien.jpg' | prepend: site.baseurl }}") no-repeat center center scroll;
@@ -178,7 +182,9 @@ a:focus {
 }
 
 #generateur {
+    display: table;
     width: 100%;
+    height: auto;
     padding: 150px 50px 150px;
     color: #fff;
     background: url("{{ '/img/SG15-4.JPG' | prepend: site.baseurl }}") no-repeat ;
@@ -194,7 +200,9 @@ a:focus {
 }
 
 #recrutement {
+    display: table;
     width: 100%;
+    height: auto;
     padding: 150px 50px 200px;
     color: #fff;
     background: url("{{ '/img/trio.jpg' | prepend: site.baseurl }}") no-repeat ;
@@ -211,7 +219,9 @@ a:focus {
 
 
 #event {
+    display: table;
     width: 100%;
+    height: auto;
     padding: 150px 50px 200px;
     color: #fff;
     background: url("{{ '/img/Fighter.JPG' | prepend: site.baseurl }}") no-repeat center center scroll;
@@ -227,7 +237,9 @@ a:focus {
 }
 
 #media{
+    display: table;
     width: 100%;
+    height: auto;
     padding: 150px 50px 200px;
     color: #fff;
     font-size: 18px;
@@ -237,7 +249,9 @@ a:focus {
 }
 
 #infos {
+    display: table;
     width: 100%;
+    height: auto;
     padding: 150px 50px 150px;
     color: #fff;
     background: url("{{ '/img/Lego_fence.JPG' | prepend: site.baseurl }}") no-repeat center center scroll;
